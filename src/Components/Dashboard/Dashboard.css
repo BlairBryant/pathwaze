@@ -1,20 +1,44 @@
 .dashboard header {
     width: 100%;
     height: 200px;
-    /* background: greenyellow; */
-    background-image: url('https://ih0.redbubble.net/image.370673308.0759/flat,800x800,075,f.u4.jpg');
+    background-image: url('https://images.unsplash.com/photo-1523612192437-66de9804ac3c?ixlib=rb-0.3.5&s=05d6e878befb4c10a52c224421fc69a5&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #cccccc;
     box-sizing: border-box;
     padding: 20px;
+    justify-content: space-between;
+    color: white;
 }
 
 .hamAndLogo {
-    
+    font-size: 32px;
+    cursor: pointer;
 }
 
 .hamAndLogo div {
     box-sizing: border-box;
     padding: 0px 20px;
+}
+
+header .companiesDiv {
+    background: #ccc;
+    justify-content: space-between;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 25px 28px;
+}
+
+.companiesContainer h2 {
+    padding-top: 35px;
+    font-weight: bold;
+}
+
+.userImg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: cadetblue;
+    margin-right: 10px;
 }

@@ -19,6 +19,30 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+h6 {
+	font-size: 14px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h1 {
+	font-size: 40px;
+}
+
 body {
 	line-height: 1;
 }
@@ -31,7 +55,16 @@ body {
   display: flex;
 }
 
-.column {
+.clmn {
   display: flex;
   flex-direction: column;
+}
+
+.ctr {
+	justify-content: center;
+	align-items: center;
+}
+
+.align {
+	align-items: center;
 }
