@@ -12,6 +12,10 @@ class Dashboard extends Component {
     constructor() {
         super()
 
+        this.state = {
+            modal: false
+        }
+
         this.contentCards = [{ img: one, title: 'I am a title', paragraph: 'So much content that it is hard to believe' },
         { img: two, title: 'The second title is rad', paragraph: 'A very useful article on the Galopagos Island.' },
         { img: three, title: 'Going on three', paragraph: 'A forecast on the climate of the EUR/AUD' },
@@ -51,7 +55,7 @@ class Dashboard extends Component {
                         <h4>Content Library</h4>
                         <div className='row filesFAQs'>
                             <h4>Files</h4>
-                            <h4>FAQs</h4>
+                            <h4 onClick={() => this.setState({modal: true})}>FAQs</h4>
                         </div>
                     </div>
                     <div className='row'>
@@ -61,7 +65,20 @@ class Dashboard extends Component {
                         {mapped}
                     </div>
                 </section>
-
+                {
+                    this.state.modal
+                        ?
+                        <div className='modalWrapper' onClick={() => {
+                            
+                            this.setState({modal: false})
+                            }}>
+                            <div className='modal' onClick={(e) => e.stopPropagation()}>
+                                <button onClick={() => alert('hey')}>Hey</button>
+                            </div>
+                        </div>
+                        :
+                        null
+                }
             </div>
         )
     }
